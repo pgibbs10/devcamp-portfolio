@@ -18,7 +18,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs/new
   def new
-    @blog = Blog.new
+    @blogs = Blog.new
   end
 
   # GET /blogs/1/edit
@@ -28,10 +28,10 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @blog = Blog.new(blog_params)
+    @blogs = Blog.new(blog_params)
 
     respond_to do |format|
-      if @blog.save
+      if @blogs.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
       else
         format.html { render :new }
