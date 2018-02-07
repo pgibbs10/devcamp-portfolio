@@ -7,28 +7,12 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
-        <div class = "skills">
-          <% @skills.each do |skill| %>
-            <div class="skill">
-              <h4><%= skill.title %></h4>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-warning"
-                  role="progress"
-                  aria-valuenow="<%= skill.percent_utilized %>"
-                  aria-valuemax="100"
-                  style="width: <%=skill.percent_utilized %>%"
-                ></div>
-              </div>
-            </div>
-          <% end %>
-        </div>
       </div>
 
       <div class="col-md-8">
-        <p>You're just a chicken, CHEEEEEP CHEEP CHEEP CHEEP CHEEEEEEEEP.</p>
+        <p>Always Learning.</p>
 
-        <p>Johnny: [walks into flower shop] Hi. Flower Shop Clerk: Can I help you? Johnny: Yeah, can I have a dozen red roses, please? Flower Shop Clerk: Oh, hi, Johnny. I didn't know it was you. [grabs bouquet of roses] Flower Shop Clerk: Here you go. Johnny: That's me. How much is it? Flower Shop Clerk: It'll be eighteen dollars. Johnny: [hands over cash] Here you go. Keep the change. [grabs flowers and pats dog on the counter] Johnny: Hi, doggy. Flower Shop Clerk: You're my favorite customer. Johnny: Thanks a lot. Bye! Flower Shop Clerk: Buh-bye!</p>
+        <p>Aside from my love of all things technology, I enjoy a number of other activities, such as Dungeons & Dragons, Snowboarding, Scuba Diving.</p>
 
         <p>
           <button
@@ -57,22 +41,29 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+             Freelance; Self-employed; 2017-2018. 
+             Developing websites for Aviation First and JakeWelds using Ruby, and Ruby on Rails. Built from the ground up, uses Amazon Web Services to allow the owner to upload photos to the website’s gallery. Utilizes google’s api for it’s map feature.
+              Progress available at www.github.com/pgibbs10
             </div>
+
             <div class="card card-block">
-              Job 2
+              Technical Support; Silhouette America; Mar-Nov 2017.
+              Worked to find bugs fixes and solutions for hardware and design software compatible with the products
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              Full Stack Development Course =>
+              2017-2018, Bottega. College accredited full-time, full-stack development course, 600 hours. Introduced the entire scope of web development and provided the experience to start freelance. 
             </div>
             <div class="card card-block">
-              School 2
+              University => CS Major
+              015-2016, Utah State University. Learned C++ and a little more Java, algorithms. Learned application development, was introduced to concepts such as the Model, View, Controller.
             </div>
             <div class="card card-block">
-              School 3
+              High School =>
+              Graduated 2014, The Woodlands High School. Took first CS courses in Java, along with HTML and CSS. Learned the fundamentals of programming, such as variables and syntax.
             </div>
           </div>
         </p>
